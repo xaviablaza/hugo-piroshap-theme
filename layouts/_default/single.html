@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="description" content="{{ .Site.Params.Description }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>{{ .Params.Title }}</title>
+        <link rel="shortcut icon" href="{{ .Site.BaseURL }}/assets/icons/{{ .Site.Params.Favicon }}">
+        <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}/assets/icons/{{ .Site.Params.appletouch_60x60 }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ .Site.BaseURL }}/assets/icons/{{ .Site.Params.appletouch_76x76 }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ .Site.BaseURL }}/assets/icons/{{ .Site.Params.appletouch_120x120 }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.BaseURL }}/assets/icons/{{ .Site.Params.appletouch_152x152 }}">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/core.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/work.css">
+        <script src="{{ .Site.BaseURL }}/js/jquery.js"></script>
+        <script src="{{ .Site.BaseURL }}/js/core.js"></script>
+        {{ template "_internal/google_analytics.html" . }}
+        <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/tweet.77b0c8c821734364d3d725fc2955821b.js"></script>
+    </head>
+    <body>
+        <a class="logo logo-visible" href="http://aaron.mn/"></a>
+        <div class="container">
+            <div class="mb-3 mb-md-4">
+                <h4 class="mt-0 mb-3 mb-md-4"><a href="{{ .Site.BaseURL }}">← {{ .Site.Title }}</a></h4>
+                <h1 class="mt-0 mb-2">{{ .Params.case_title }}</h1>
+                <h3 class="m-0">{{ .Params.case_subtitle }}</h3>
+            </div>
+            {{ .Content }}
+            <div class="clearfix mt-3 mt-md-4 mt-lg-5">
+                <hr class="mb-3">
+                <div class="float-left-md">
+                    <h4><a href="{{ .Site.BaseURL }}">← {{ .Site.Title }}</a></h4>
+                </div>
+                <div class="float-right-md">
+                    <p>
+                        <a class="mr-2" href="{{ .Site.Params.Heading.link_url1 }}">{{ .Site.Params.Heading.link_title1 }}</a>
+                        <a class="mr-2" href="{{ .Site.Params.Heading.link_url2 }}">{{ .Site.Params.Heading.link_title2 }}</a>
+                        <a class="mr-2" href="{{ .Site.Params.Heading.link_url3 }}">{{ .Site.Params.Heading.link_title3 }}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

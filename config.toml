@@ -1,0 +1,42 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Juan Piroshap"
+theme = "hugo-piroshap-theme"
+googleAnalytics = "UA-XXXXXXXX-Y"
+
+[params]
+    theme_color = "#000000"
+    description = "Juan Piroshap is a designer living in Manila, Philippines."
+    favicon = "favicon.ico"
+    appletouch_60x60 = "apple-touch-icon.png"
+    appletouch_76x76 = "apple-touch-icon-76x76.png"
+    appletouch_120x120 = "apple-touch-icon-120x120.png"
+    appletouch_152x152 = "apple-touch-icon-152x152.png"
+
+[params.heading]
+    enable = true
+    title = "Juan Piroshap is a visual designer working at [User Experience Society](https://www.facebook.com/UXSoc/) in Manila, Philippines."
+    link_title1 = "Info"
+    link_url1 = "//info/"
+    link_title2 = "Twitter"
+    link_url2 = "http://twitter.com/juanpiroshap"
+    link_title3 = "Instagram"
+    link_url3 = "http://instagram.com/juanpiroshap"
+    email = "hello@juanpiroshap.me"
+
+[params.work]
+    enable = true
+
+
+[params.process]
+    enable = true
+    title = "My Process"
+    subtitle = "Full Process Design"
+
+[params.case_studies]
+    enable = true
+    title = "Case Studies"
+    subtitle = "Selected Works"
+
+[params.footer]
+    enable = true

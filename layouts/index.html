@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+        <div class="container">
+            <div class="fit-width">
+
+                {{ if .Site.Params.Heading.enable }}
+                {{ partial "heading.html" . }}
+                {{ end }}
+
+                {{ if .Site.Params.Work.enable }}
+                {{ partial "work.html" . }}
+                {{ end }}
+
+                {{ if .Site.Params.Play.enable }}
+                {{ partial "play.html" . }}
+                {{ end }}
+
+            </div>
+        </div>
+    </body>
+</html>
